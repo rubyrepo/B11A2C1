@@ -1,0 +1,44 @@
+
+
+    <style>
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+          }
+          50% {
+            transform: translateY(-20px);
+            box-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
+          }
+          100% {
+            transform: translateY(0px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+          }
+        }
+      
+        @keyframes textFloat {
+          0% {
+            transform: translateY(5px);
+          }
+          50% {
+            transform: translateY(0px);
+          }
+          100% {
+            transform: translateY(5px);
+          }
+        }
+      
+        .floating-btn {
+          animation: float 6s ease-in-out infinite;
+        }
+      
+        .floating-btn-text {
+          animation: textFloat 9s ease-in-out infinite;
+        }
+      </style>
+
+html:
+
+              <button class="floating-btn fixed bottom-6 right-6 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg">
+            <span class="floating-btn-text inline-block">Click Me</span>
+          </button>  

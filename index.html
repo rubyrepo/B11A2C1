@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse4Pets</title>
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/48b594ed53.js" crossorigin="anonymous"></script>
+  <!-- custom tailwind css -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- google fonts:sora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- floating animation css -->
+  <style>
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+      }
+      50% {
+        transform: translateY(-20px);
+        box-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
+      }
+      100% {
+        transform: translateY(0px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+      }
+    }
+  
+    @keyframes textFloat {
+      0% {
+        transform: translateY(5px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(5px);
+      }
+    }
+  
+    .floating-btn {
+      animation: float 6s ease-in-out infinite;
+    }
+  
+    .floating-btn-text {
+      animation: textFloat 9s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+<body style="font-family: 'Sora', sans-serif;">
+  <header>
+    <nav class="flex justify-between bg-[#FFF9F4] px-7 sm:px-40 py-4 border-b border-black sm:border-0">
+      <div class="flex items-center gap-3">
+        <img src="./c1-assets/logo-header.png" alt="">
+        <h1 class="hidden sm:block text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+      </div>
+      <div class="hidden sm:flex items-center">
+        <ul class="flex items-center  gap-3">
+          <li class="hover:underline"><a href="">Find a pet</a></li>
+          <li class="hover:underline"><a href="">Breeds</a></li>
+          <li class="hover:underline"><a href="">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="hidden sm:flex items-center gap-3">
+        <a href=""><i class="fa-regular fa-bell"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <button class="py-2 px-7 border rounded-lg border-[#FFDC26]"><a href="">Login</a></button>
+        <button class="py-2 px-7 rounded-lg bg-[#FFDC26]"><a href=" ">Register</a></button>
+      </div>
+      <div class="sm:hidden flex items-center">
+        <a href="">
+          <i class="fa-solid fa-bars text-xl "></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="sm:mx-24 mx-3 mt-7 sm:mt-16 ">
+    <!-- Banner section -->
+    <section class="relative h-[500px] sm:h-[600px]">
+      <div class="absolute top-10 left-5 sm:left-16 z-10">
+        <h1 class="text-3xl sm:text-5xl sm:pb-5 pb-3 font-bold">
+          Pamper Your Pet,<br> Because They Deserve <br>the Bes
+        </h1>
+        <p class="text-base sm:text-xl font-extralight">
+          Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button class="py-2 px-7 rounded-lg bg-[#FFDC26] floating-btn mt-9">
+          <span class="floating-btn-text">Find a pet</span>
+        </button>
+      </div>
+      <img class="absolute bottom-0 right-0 w-full sm:w-auto sm:h-full max-w-none h-auto" src="./c1-assets/cat-big.png" alt="">
+    </section>
+    
+    
+    
+    <!-- browes my catagory section -->
+    <section class="sm:mt-40 mt-20 sm:mb-16 mb-8 sm:mx-20 mx-3">
+      <h2 class="sm:text-3xl text-xl font-bold mb-10">Browse By Categories</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-6 sm:gap-10 gap-5">
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img class="" src="./c1-assets/dog-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Dog</b>
+          <p>3 items</p>
+        </div>
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img src="./c1-assets/fish-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Fish</b>
+          <p>3 items</p>
+        </div>
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img src="./c1-assets/cat-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Cat</b>
+          <p>3 items</p>
+        </div>
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img src="./c1-assets/bird-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Bird</b>
+          <p>3 items</p>
+        </div>
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img src="./c1-assets/mouse-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Small pet</b>
+          <p>3 items</p>
+        </div>
+        <div class="sm:w-48 sm:h-60 h-52 bg-[#F9DF8A] items-center rounded-xl flex flex-col justify-center">
+          <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center">
+            <img src="./c1-assets/rabbit-cartoon.png" alt="">
+          </div>
+          <b class="py-2">Rabbit</b>
+          <p>2 items</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--  -->
+  </main>
+  <footer></footer>
+</body>
+</html>
